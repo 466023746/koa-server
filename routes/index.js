@@ -16,4 +16,16 @@ router.get('/json', async (ctx, next) => {
   }
 })
 
+router.get('/web-worker', async (ctx, next) => {
+    await ctx.render('web-worker', {
+        title: 'Web Worker!'
+    })
+})
+
+router.get('/web-worker2', async (ctx, next) => {
+    await ctx.render('web-worker', {
+        title: 'Web Worker2!'
+    })
+})
+
 module.exports = router
